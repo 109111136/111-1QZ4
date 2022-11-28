@@ -15,12 +15,13 @@ namespace _111_1QZ4
         {
             string s_connS = "";
 
-            s_connS = "Data Source = DESKTOP - GUNQC4G\\SQLEXPRESS03;" +
-            "Initial Catalog = test;" +
-            "Integrated Security = True;" +
-            "Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False;" +
-            "ApplicationIntent = ReadWrite; MultiSubnetFailover = False;" +
-            "User ID = sa; Password = 12345";
+            s_connS = "Data Source=(localdb)\\MSSQLLocalDB;" +
+                "Initial Catalog=test;" +
+                "Integrated Security=True;" +
+                "Connect Timeout=30;Encrypt=False;" +
+                "TrustServerCertificate=False;" +
+                "ApplicationIntent=ReadWrite;MultiSubnetFailover=False;" +
+                "User ID = sa; Password = 12345";
 
             try {
                 SqlConnection o_conn = new SqlConnection(s_connS);
